@@ -7,6 +7,9 @@ const bookSchema = new mongoose.Schema(
     author: {type: String, required: true},
     publisher: {type: String, required: true},
     numberOfPages: {type: Number}
+},    
+{
+    versionKey: false
 }
 );
 

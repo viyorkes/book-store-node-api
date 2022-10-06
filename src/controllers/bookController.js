@@ -40,6 +40,19 @@ static updateBook = (req, res) => {
 }
 
 
+static deleteBook = (req, res) => {
+  const id = req.params.id;
+
+  books.findByIdAndDelete(id, (err) => {
+      if(!err){
+          res.status(200).send({message: 'success to delete this book'})
+      } else {
+          res.status(500).send({message: err.message})
+      }
+  })
+}
+
+
 }
 
 export default BookController
