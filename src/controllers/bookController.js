@@ -45,7 +45,7 @@ static deleteBook = (req, res) => {
 
   books.findByIdAndDelete(id, (err) => {
       if(!err){
-          res.status(200).send({message: 'success to delete this book'})
+          res.status(200).send({message: 'success to delete'})
       } else {
           res.status(500).send({message: err.message})
       }
