@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es2017",                          
+      "module": "commonjs", 
+      "allowJs": true,                                            
+      "esModuleInterop": true,                  
+      "skipLibCheck": true,                     
+      "forceConsistentCasingInFileNames": true  
+    },
+        "compilerOptions": {
+          "typeRoots" : ["./src/types", "./node_modules/@types"]
+        },
+      
+    "include": [
+      "src/**/*.ts"
+    ],
+    "typeRoots": [
+        "./src/@types",
+        "./custom_typings",
+        "./@types",
+        "./node_modules/@types"
+      ]
+  }
