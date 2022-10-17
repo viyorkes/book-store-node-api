@@ -1,5 +1,5 @@
 import { IBookRepository } from "../../repository/IBookRepository";
-import books  from "../../entity/book";
+
 
 export class GetBookUseCase {
   constructor(
@@ -9,12 +9,6 @@ export class GetBookUseCase {
   async execute() {
 
     const response = await this.bookRepository.findAll(); 
-
-    console.log("heree2")
-
-    console.log(response);
-
-    console.log("heree2")
 
     return response;
   }

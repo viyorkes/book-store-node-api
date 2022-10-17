@@ -4,8 +4,6 @@ import { DeleteBookUseCase } from "./DeleteBookUseCase";
 
 
 
-
-
 const mongoDbRepository = new MongoDbRepository();
 
 const deleteBookUseCase = new DeleteBookUseCase(

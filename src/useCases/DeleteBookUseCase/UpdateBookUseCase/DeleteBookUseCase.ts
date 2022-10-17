@@ -1,6 +1,5 @@
 
 import { IBookRepository } from "../../../repository/IBookRepository";
-import { IUpdateBookRequestDTO } from "./DeleteBookDTO";
 
 
 export class DeleteBookUseCase {

@@ -13,14 +13,8 @@ export class MongoDbRepository implements IBookRepository {
 
 return books.findByIdAndUpdate(id, info)}
 
-
-
 async findByIdAndDelete(id): Promise<any> {
-
   return books.findByIdAndDelete(id)}
-
-
-    
 
   async registerBook(info): Promise<void> {
     let book = new books(info);

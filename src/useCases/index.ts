@@ -1,10 +1,6 @@
-
-
 import { MongoDbRepository } from "../repository/DB/MongodbRepository";
 import { RegisterBookController } from "../useCases/RegisterBookUseCase/RegisterBookController";
 import { RegisterBookUseCase } from "../useCases/RegisterBookUseCase/RegisterBookUseCase";
-
-
 
 
 const mongoDbRepository = new MongoDbRepository();

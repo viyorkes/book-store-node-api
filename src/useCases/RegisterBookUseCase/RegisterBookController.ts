@@ -15,8 +15,6 @@ export class RegisterBookController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { title, author, publisher, numberOfPages } = request.body;
 
-console.log(request.body)
-
     try {
       await this.registerBookUseCase.execute({
         title,

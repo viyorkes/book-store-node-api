@@ -16,8 +16,6 @@ export class UpdateBookController {
     const { title, author, publisher, numberOfPages } = request.body;
     const id = request.params.id;
 
-console.log(request.body)
-console.log(id)
 
     try {
       await this.updateBookUseCase.execute({

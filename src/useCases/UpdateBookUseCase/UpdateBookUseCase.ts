@@ -1,6 +1,5 @@
 import { IBookRepository } from "../../repository/IBookRepository";
 import { IUpdateBookRequestDTO } from "./UpdateBookDTO";
-import books  from "../../entity/book";
 
 export class UpdateBookUseCase {
   constructor(
